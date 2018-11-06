@@ -1,11 +1,11 @@
 /* Notebook:*/
 html {
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px;
 }
 /* Title:*/
 .Title {
-  font-size: 36px;
+  font-size: 42px;
   font-family: Helvetica;
   font-weight: bold;
   color: #66003D;
@@ -23,7 +23,7 @@ html {
   padding: 6px;
 }
 .TitleInline {
-  font-size: 36px;
+  font-size: 42px;
   font-family: Helvetica;
   font-weight: bold;
   color: #66003D;
@@ -42,7 +42,7 @@ html {
 }
 /* Subtitle:*/
 .Subtitle {
-  font-size: 24px;
+  font-size: 30px;
   font-family: Helvetica;
   line-height: 1;
   margin-left: 20px;
@@ -52,7 +52,7 @@ html {
   padding: 8px;
 }
 .SubtitleInline {
-  font-size: 24px;
+  font-size: 30px;
   font-family: Helvetica;
   line-height: 1;
   margin-left: 20px;
@@ -63,7 +63,7 @@ html {
 }
 /* Section 1:*/
 .Section 1 {
-  font-size: 18px;
+  font-size: 24px;
   font-family: Helvetica;
   font-weight: bold;
   border-left: 0px;
@@ -82,7 +82,7 @@ html {
   padding-bottom: 8px;
 }
 .Section 1Inline {
-  font-size: 18px;
+  font-size: 24px;
   font-family: Helvetica;
   font-weight: bold;
   border-left: 0px;
@@ -102,7 +102,7 @@ html {
 }
 /* Section:*/
 .Section {
-  font-size: 18px;
+  font-size: 24px;
   font-family: Helvetica;
   font-weight: bold;
   border-left: 0px;
@@ -118,7 +118,7 @@ html {
   padding: 4px;
 }
 .SectionInline {
-  font-size: 18px;
+  font-size: 24px;
   font-family: Helvetica;
   font-weight: bold;
   border-left: 0px;
@@ -135,7 +135,7 @@ html {
 }
 /* Subsection:*/
 .Subsection {
-  font-size: 14px;
+  font-size: 20px;
   font-family: Times;
   font-weight: bold;
   margin-left: 38px;
@@ -145,7 +145,7 @@ html {
   padding: 8px;
 }
 .SubsectionInline {
-  font-size: 14px;
+  font-size: 20px;
   font-family: Times;
   font-weight: bold;
   margin-left: 38px;
@@ -156,7 +156,7 @@ html {
 }
 /* Subsubsection:*/
 .Subsubsection {
-  font-size: 12px;
+  font-size: 18px;
   font-family: Times;
   font-weight: bold;
   margin-left: 55px;
@@ -166,7 +166,7 @@ html {
   padding: 8px;
 }
 .SubsubsectionInline {
-  font-size: 12px;
+  font-size: 18px;
   font-family: Times;
   font-weight: bold;
   margin-left: 55px;
@@ -198,7 +198,7 @@ html {
 }
 /* Commentary:*/
 .Commentary {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   color: #000066;
   text-align: justify;
@@ -210,7 +210,7 @@ html {
   padding: 8px;
 }
 .CommentaryInline {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   color: #000066;
   text-align: justify;
@@ -223,7 +223,7 @@ html {
 }
 /* Input:*/
 .Input {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   background-color: #F7F7F7;
   border-left: 1px;
@@ -239,7 +239,7 @@ html {
   padding: 8px;
 }
 .InputInline {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   background-color: #F7F7F7;
   border-left: 1px;
@@ -265,7 +265,7 @@ html {
 }
 /* Output:*/
 .Output {
-  font-size: 12px;
+  font-size: 18px;
   background-color: #D9D9D9;
   border-left: 1px;
   border-right: 1px;
@@ -280,7 +280,7 @@ html {
   padding: 8px;
 }
 .OutputInline {
-  font-size: 12px;
+  font-size: 18px;
   background-color: #D9D9D9;
   border-left: 1px;
   border-right: 1px;
@@ -296,7 +296,7 @@ html {
 }
 /* InputOnly:*/
 .InputOnly {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   background-color: #F7F7F7;
   border: 1px;
@@ -309,7 +309,7 @@ html {
   padding: 8px;
 }
 .InputOnlyInline {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   background-color: #F7F7F7;
   border: 1px;
@@ -323,7 +323,7 @@ html {
 }
 /* Message:*/
 .Message {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   font-style: oblique;
   color: #000000;
@@ -341,7 +341,7 @@ html {
   padding: 8px;
 }
 .MessageInline {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   font-style: oblique;
   color: #000000;
@@ -408,7 +408,7 @@ html {
 }
 /* CellLabel:*/
 .CellLabel {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   font-style: oblique;
   color: #990099;
@@ -602,14 +602,14 @@ html {
 }
 /* SO10:*/
 .SO10 {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   font-style: italic;
   font-weight: normal;
   padding: 8px;
 }
 .SO10Inline {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   font-style: italic;
   font-weight: normal;
@@ -626,34 +626,34 @@ html {
 }
 /* Small:*/
 .Small {
-  font-size: 9px;
+  font-size: 15px;
   padding: 8px;
 }
 .SmallInline {
-  font-size: 9px;
+  font-size: 15px;
   padding: 8px;
 }
 /* Medium:*/
 .Medium {
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px;
 }
 .MediumInline {
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px;
 }
 /* Large:*/
 .Large {
-  font-size: 24px;
+  font-size: 30px;
   padding: 8px;
 }
 .LargeInline {
-  font-size: 24px;
+  font-size: 30px;
   padding: 8px;
 }
 /* Author:*/
 .Author {
-  font-size: 14px;
+  font-size: 20px;
   font-family: Helvetica;
   font-style: italic;
   line-height: 1;
@@ -664,7 +664,7 @@ html {
   padding: 8px;
 }
 .AuthorInline {
-  font-size: 14px;
+  font-size: 20px;
   font-family: Helvetica;
   font-style: italic;
   line-height: 1;
@@ -676,7 +676,7 @@ html {
 }
 /* Abstract:*/
 .Abstract {
-  font-size: 12px;
+  font-size: 18px;
   font-family: Times;
   line-height: 0.9;
   border: 0px;
@@ -689,7 +689,7 @@ html {
   padding: 8px;
 }
 .AbstractInline {
-  font-size: 12px;
+  font-size: 18px;
   font-family: Times;
   line-height: 0.9;
   border: 0px;
@@ -703,7 +703,7 @@ html {
 }
 /* Caption:*/
 .Caption {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   margin-left: 55px;
   margin-right: 10px;
@@ -712,7 +712,7 @@ html {
   padding: 8px;
 }
 .CaptionInline {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   margin-left: 55px;
   margin-right: 10px;
@@ -966,44 +966,44 @@ html {
 }
 /* Header:*/
 .Header {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   padding: 8px;
 }
 .HeaderInline {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   padding: 8px;
 }
 /* PageNumber:*/
 .PageNumber {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   font-weight: bold;
   padding: 8px;
 }
 .PageNumberInline {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   font-weight: bold;
   padding: 8px;
 }
 /* Footer:*/
 .Footer {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   text-align: center;
   padding: 8px;
 }
 .FooterInline {
-  font-size: 9px;
+  font-size: 15px;
   font-family: Helvetica;
   text-align: center;
   padding: 8px;
 }
 /* SlideShowNavigationBar:*/
 .SlideShowNavigationBar {
-  font-size: 10px;
+  font-size: 16px;
   background-color: #CCCCCC;
   text-align: center;
   border: 1px;
@@ -1016,7 +1016,7 @@ html {
   padding: 0px;
 }
 .SlideShowNavigationBarInline {
-  font-size: 10px;
+  font-size: 16px;
   background-color: #CCCCCC;
   text-align: center;
   border: 1px;
@@ -1030,7 +1030,7 @@ html {
 }
 /* SlideShowSection:*/
 .SlideShowSection {
-  font-size: 18px;
+  6ont-size: 24px;
   font-family: Helvetica;
   font-weight: normal;
   color: #FFFFFF;
@@ -1051,7 +1051,7 @@ html {
   padding-bottom: 6px;
 }
 .SlideShowSectionInline {
-  font-size: 18px;
+  font-size: 24px;
   font-family: Helvetica;
   font-weight: normal;
   color: #FFFFFF;
@@ -1073,18 +1073,18 @@ html {
 }
 /* SlideHyperlink:*/
 .SlideHyperlink {
-  font-size: 26px;
+  font-size: 32px;
   color: #666666;
   padding: 8px;
 }
 .SlideHyperlinkInline {
-  font-size: 26px;
+  font-size: 32px;
   color: #666666;
   padding: 8px;
 }
 /* PreviousNext:*/
 .PreviousNext {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   color: #808080;
   text-align: right;
@@ -1096,7 +1096,7 @@ html {
   padding: 8px;
 }
 .PreviousNextInline {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Helvetica;
   color: #808080;
   text-align: right;
