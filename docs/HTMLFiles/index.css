@@ -1,0 +1,1782 @@
+/* Notebook:*/
+html {
+  font-size: 12px;
+  padding: 8px;
+}
+/* Title:*/
+.Title {
+  font-size: 36px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #66003D;
+  line-height: 1.31111;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 18px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 6px;
+}
+.TitleInline {
+  font-size: 36px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #66003D;
+  line-height: 1.31111;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 18px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 6px;
+}
+/* Subtitle:*/
+.Subtitle {
+  font-size: 24px;
+  font-family: Helvetica;
+  line-height: 1;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+.SubtitleInline {
+  font-size: 24px;
+  font-family: Helvetica;
+  line-height: 1;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+/* Section 1:*/
+.Section 1 {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: bold;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 3px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #66003D;
+  margin-left: 18px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+.Section 1Inline {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: bold;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 3px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #66003D;
+  margin-left: 18px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+/* Section:*/
+.Section {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: bold;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #66003D;
+  margin-left: 18px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+.SectionInline {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: bold;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #66003D;
+  margin-left: 18px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+/* Subsection:*/
+.Subsection {
+  font-size: 14px;
+  font-family: Times;
+  font-weight: bold;
+  margin-left: 38px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+.SubsectionInline {
+  font-size: 14px;
+  font-family: Times;
+  font-weight: bold;
+  margin-left: 38px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+/* Subsubsection:*/
+.Subsubsection {
+  font-size: 12px;
+  font-family: Times;
+  font-weight: bold;
+  margin-left: 55px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  padding: 8px;
+}
+.SubsubsectionInline {
+  font-size: 12px;
+  font-family: Times;
+  font-weight: bold;
+  margin-left: 55px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  padding: 8px;
+}
+/* Text:*/
+.Text {
+  font-family: Times;
+  text-align: justify;
+  line-height: 1.16667;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 8px;
+}
+.TextInline {
+  font-family: Times;
+  text-align: justify;
+  line-height: 1.16667;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 8px;
+}
+/* Commentary:*/
+.Commentary {
+  font-size: 10px;
+  font-family: Helvetica;
+  color: #000066;
+  text-align: justify;
+  line-height: 1.2;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+.CommentaryInline {
+  font-size: 10px;
+  font-family: Helvetica;
+  color: #000066;
+  text-align: justify;
+  line-height: 1.2;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+/* Input:*/
+.Input {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #F7F7F7;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+.InputInline {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #F7F7F7;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+/* InlineInput:*/
+.InlineInput {
+  font-weight: bold;
+  padding: 8px;
+}
+.InlineInputInline {
+  font-weight: bold;
+  padding: 8px;
+}
+/* Output:*/
+.Output {
+  font-size: 12px;
+  background-color: #D9D9D9;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+.OutputInline {
+  font-size: 12px;
+  background-color: #D9D9D9;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+/* InputOnly:*/
+.InputOnly {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #F7F7F7;
+  border: 1px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+.InputOnlyInline {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #F7F7F7;
+  border: 1px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+/* Message:*/
+.Message {
+  font-size: 10px;
+  font-family: Helvetica;
+  font-style: oblique;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+.MessageInline {
+  font-size: 10px;
+  font-family: Helvetica;
+  font-style: oblique;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+/* Print:*/
+.Print {
+  background-color: #B3B3B3;
+  text-align: left;
+  margin-left: 55px;
+  margin-right: 26px;
+  margin-top: 6px;
+  margin-bottom: 1px;
+  padding: 8px;
+}
+.PrintInline {
+  background-color: #B3B3B3;
+  text-align: left;
+  margin-left: 55px;
+  margin-right: 26px;
+  margin-top: 6px;
+  margin-bottom: 1px;
+  padding: 8px;
+}
+/* Graphics:*/
+.Graphics {
+  background-color: #D9D9D9;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+.GraphicsInline {
+  background-color: #D9D9D9;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+/* CellLabel:*/
+.CellLabel {
+  font-size: 10px;
+  font-family: Helvetica;
+  font-style: oblique;
+  color: #990099;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* RM:*/
+.RM {
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+.RMInline {
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+/* BF:*/
+.BF {
+  font-weight: bold;
+  padding: 8px;
+}
+.BFInline {
+  font-weight: bold;
+  padding: 8px;
+}
+/* IT:*/
+.IT {
+  font-style: italic;
+  padding: 8px;
+}
+.ITInline {
+  font-style: italic;
+  padding: 8px;
+}
+/* TR:*/
+.TR {
+  font-family: Times;
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+.TRInline {
+  font-family: Times;
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+/* TI:*/
+.TI {
+  font-family: Times;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+.TIInline {
+  font-family: Times;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+/* TB:*/
+.TB {
+  font-family: Times;
+  font-style: normal;
+  font-weight: bold;
+  padding: 8px;
+}
+.TBInline {
+  font-family: Times;
+  font-style: normal;
+  font-weight: bold;
+  padding: 8px;
+}
+/* TBI:*/
+.TBI {
+  font-family: Times;
+  font-style: italic;
+  font-weight: bold;
+  padding: 8px;
+}
+.TBIInline {
+  font-family: Times;
+  font-style: italic;
+  font-weight: bold;
+  padding: 8px;
+}
+/* MR:*/
+.MR {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+.MRInline {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+/* MO:*/
+.MO {
+  font-family: Courier;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+.MOInline {
+  font-family: Courier;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+/* MB:*/
+.MB {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: bold;
+  padding: 8px;
+}
+.MBInline {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: bold;
+  padding: 8px;
+}
+/* MBO:*/
+.MBO {
+  font-family: Courier;
+  font-style: italic;
+  font-weight: bold;
+  padding: 8px;
+}
+.MBOInline {
+  font-family: Courier;
+  font-style: italic;
+  font-weight: bold;
+  padding: 8px;
+}
+/* SR:*/
+.SR {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+.SRInline {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px;
+}
+/* SO:*/
+.SO {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+.SOInline {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+/* SB:*/
+.SB {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  padding: 8px;
+}
+.SBInline {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  padding: 8px;
+}
+/* SBO:*/
+.SBO {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: bold;
+  padding: 8px;
+}
+.SBOInline {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: bold;
+  padding: 8px;
+}
+/* SO10:*/
+.SO10 {
+  font-size: 10px;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+.SO10Inline {
+  font-size: 10px;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8px;
+}
+/* Inert:*/
+.Inert {
+  background-color: #DEE7F8;
+  padding: 8px;
+}
+.InertInline {
+  background-color: #DEE7F8;
+  padding: 8px;
+}
+/* Small:*/
+.Small {
+  font-size: 9px;
+  padding: 8px;
+}
+.SmallInline {
+  font-size: 9px;
+  padding: 8px;
+}
+/* Medium:*/
+.Medium {
+  font-size: 12px;
+  padding: 8px;
+}
+.MediumInline {
+  font-size: 12px;
+  padding: 8px;
+}
+/* Large:*/
+.Large {
+  font-size: 24px;
+  padding: 8px;
+}
+.LargeInline {
+  font-size: 24px;
+  padding: 8px;
+}
+/* Author:*/
+.Author {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-style: italic;
+  line-height: 1;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  padding: 8px;
+}
+.AuthorInline {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-style: italic;
+  line-height: 1;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  padding: 8px;
+}
+/* Abstract:*/
+.Abstract {
+  font-size: 12px;
+  font-family: Times;
+  line-height: 0.9;
+  border: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 18px;
+  margin-right: 140px;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  padding: 8px;
+}
+.AbstractInline {
+  font-size: 12px;
+  font-family: Times;
+  line-height: 0.9;
+  border: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 18px;
+  margin-right: 140px;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  padding: 8px;
+}
+/* Caption:*/
+.Caption {
+  font-size: 9px;
+  font-family: Helvetica;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+.CaptionInline {
+  font-size: 9px;
+  font-family: Helvetica;
+  margin-left: 55px;
+  margin-right: 10px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+/* Reference:*/
+.Reference {
+  font-family: Times;
+  text-align: justify;
+  line-height: 1;
+  margin-left: 24px;
+  margin-right: 40px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 8px;
+}
+.ReferenceInline {
+  font-family: Times;
+  text-align: justify;
+  line-height: 1;
+  margin-left: 24px;
+  margin-right: 40px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 8px;
+}
+/* PictureGroup:*/
+.PictureGroup {
+  background-color: #D9D9D9;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+.PictureGroupInline {
+  background-color: #D9D9D9;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 55px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+/* Hyperlink:*/
+.Hyperlink {
+  color: #0000FF;
+  padding: 8px;
+}
+.HyperlinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* MainBookLink:*/
+.MainBookLink {
+  color: #0000FF;
+  padding: 8px;
+}
+.MainBookLinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* AddOnsLink:*/
+.AddOnsLink {
+  font-family: Courier;
+  color: #0000FF;
+  padding: 8px;
+}
+.AddOnsLinkInline {
+  font-family: Courier;
+  color: #0000FF;
+  padding: 8px;
+}
+/* RefGuideLink:*/
+.RefGuideLink {
+  font-family: Courier;
+  color: #0000FF;
+  padding: 8px;
+}
+.RefGuideLinkInline {
+  font-family: Courier;
+  color: #0000FF;
+  padding: 8px;
+}
+/* GettingStartedLink:*/
+.GettingStartedLink {
+  color: #0000FF;
+  padding: 8px;
+}
+.GettingStartedLinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* DemosLink:*/
+.DemosLink {
+  color: #0000FF;
+  padding: 8px;
+}
+.DemosLinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* TourLink:*/
+.TourLink {
+  color: #0000FF;
+  padding: 8px;
+}
+.TourLinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* OtherInformationLink:*/
+.OtherInformationLink {
+  color: #0000FF;
+  padding: 8px;
+}
+.OtherInformationLinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* MasterIndexLink:*/
+.MasterIndexLink {
+  color: #0000FF;
+  padding: 8px;
+}
+.MasterIndexLinkInline {
+  color: #0000FF;
+  padding: 8px;
+}
+/* Paste:*/
+.Paste {
+  padding: 8px;
+}
+.PasteInline {
+  padding: 8px;
+}
+/* Evaluate:*/
+.Evaluate {
+  padding: 8px;
+}
+.EvaluateInline {
+  padding: 8px;
+}
+/* EvaluateCell:*/
+.EvaluateCell {
+  padding: 8px;
+}
+.EvaluateCellInline {
+  padding: 8px;
+}
+/* CopyEvaluate:*/
+.CopyEvaluate {
+  padding: 8px;
+}
+.CopyEvaluateInline {
+  padding: 8px;
+}
+/* CopyEvaluateCell:*/
+.CopyEvaluateCell {
+  padding: 8px;
+}
+.CopyEvaluateCellInline {
+  padding: 8px;
+}
+/* DisplayFormula:*/
+.DisplayFormula {
+  margin-left: 55px;
+  padding: 8px;
+}
+.DisplayFormulaInline {
+  margin-left: 55px;
+  padding: 8px;
+}
+/* ChemicalFormula:*/
+.ChemicalFormula {
+  text-align: justify;
+  margin-left: 55px;
+  margin-right: 10px;
+  padding: 8px;
+}
+.ChemicalFormulaInline {
+  text-align: justify;
+  margin-left: 55px;
+  margin-right: 10px;
+  padding: 8px;
+}
+/* Program:*/
+.Program {
+  font-family: Courier;
+  margin-left: 55px;
+  margin-right: 10px;
+  padding: 8px;
+}
+.ProgramInline {
+  font-family: Courier;
+  margin-left: 55px;
+  margin-right: 10px;
+  padding: 8px;
+}
+/* NumberedEquation:*/
+.NumberedEquation {
+  font-family: Times;
+  margin-left: 55px;
+  margin-right: 85px;
+  padding: 8px;
+}
+.NumberedEquationInline {
+  font-family: Times;
+  margin-left: 55px;
+  margin-right: 85px;
+  padding: 8px;
+}
+/* NumberedFigure:*/
+.NumberedFigure {
+  font-family: Times;
+  margin-left: 55px;
+  margin-right: 95px;
+  padding: 8px;
+}
+.NumberedFigureInline {
+  font-family: Times;
+  margin-left: 55px;
+  margin-right: 95px;
+  padding: 8px;
+}
+/* NumberedTable:*/
+.NumberedTable {
+  font-family: Times;
+  text-align: center;
+  margin-left: 55px;
+  margin-right: 95px;
+  padding: 8px;
+}
+.NumberedTableInline {
+  font-family: Times;
+  text-align: center;
+  margin-left: 55px;
+  margin-right: 95px;
+  padding: 8px;
+}
+/* Header:*/
+.Header {
+  font-size: 9px;
+  font-family: Helvetica;
+  padding: 8px;
+}
+.HeaderInline {
+  font-size: 9px;
+  font-family: Helvetica;
+  padding: 8px;
+}
+/* PageNumber:*/
+.PageNumber {
+  font-size: 9px;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 8px;
+}
+.PageNumberInline {
+  font-size: 9px;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 8px;
+}
+/* Footer:*/
+.Footer {
+  font-size: 9px;
+  font-family: Helvetica;
+  text-align: center;
+  padding: 8px;
+}
+.FooterInline {
+  font-size: 9px;
+  font-family: Helvetica;
+  text-align: center;
+  padding: 8px;
+}
+/* SlideShowNavigationBar:*/
+.SlideShowNavigationBar {
+  font-size: 10px;
+  background-color: #CCCCCC;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 0px;
+}
+.SlideShowNavigationBarInline {
+  font-size: 10px;
+  background-color: #CCCCCC;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 0px;
+}
+/* SlideShowSection:*/
+.SlideShowSection {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: #6870CC;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 4px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+.SlideShowSectionInline {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: #6870CC;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #000000;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 4px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+/* SlideHyperlink:*/
+.SlideHyperlink {
+  font-size: 26px;
+  color: #666666;
+  padding: 8px;
+}
+.SlideHyperlinkInline {
+  font-size: 26px;
+  color: #666666;
+  padding: 8px;
+}
+/* PreviousNext:*/
+.PreviousNext {
+  font-size: 10px;
+  font-family: Helvetica;
+  color: #808080;
+  text-align: right;
+  line-height: 1.3;
+  margin-left: 60px;
+  margin-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding: 8px;
+}
+.PreviousNextInline {
+  font-size: 10px;
+  font-family: Helvetica;
+  color: #808080;
+  text-align: right;
+  line-height: 1.3;
+  margin-left: 60px;
+  margin-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding: 8px;
+}
+/* SlidePreviousNextLink:*/
+.SlidePreviousNextLink {
+  text-decoration: none;
+  padding: 8px;
+}
+.SlidePreviousNextLinkInline {
+  text-decoration: none;
+  padding: 8px;
+}
+/* SlideTOCLink:*/
+.SlideTOCLink {
+  font-family: Helvetica;
+  margin-left: 24px;
+  padding: 8px;
+}
+.SlideTOCLinkInline {
+  font-family: Helvetica;
+  margin-left: 24px;
+  padding: 8px;
+}
+/* SlideTOC:*/
+.SlideTOC {
+  font-family: Helvetica;
+  margin-left: 18px;
+  padding: 8px;
+}
+.SlideTOCInline {
+  font-family: Helvetica;
+  margin-left: 18px;
+  padding: 8px;
+}
+
+@media screen{
+}
+
+@media print{
+/* Title:Printout*/
+.Title {
+  font-size: 24pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.TitleInline {
+  font-size: 24pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Subtitle:Printout*/
+.Subtitle {
+  font-size: 18pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.SubtitleInline {
+  font-size: 18pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Section 1:Printout*/
+.Section 1 {
+  font-size: 14pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.Section 1Inline {
+  font-size: 14pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* Section:Printout*/
+.Section {
+  font-size: 14pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.SectionInline {
+  font-size: 14pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Subsection:Printout*/
+.Subsection {
+  font-size: 12pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.SubsectionInline {
+  font-size: 12pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Subsubsection:Printout*/
+.Subsubsection {
+  font-size: 10pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 12pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.SubsubsectionInline {
+  font-size: 10pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 12pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Text:Printout*/
+.Text {
+  font-size: 10pt;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.TextInline {
+  font-size: 10pt;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* Commentary:Printout*/
+.Commentary {
+  font-size: 10pt;
+  font-family: Times;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 0pt;
+  margin-bottom: 3pt;
+  padding: 8pt;
+}
+.CommentaryInline {
+  font-size: 10pt;
+  font-family: Times;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 0pt;
+  margin-bottom: 3pt;
+  padding: 8pt;
+}
+/* Input:Printout*/
+.Input {
+  font-size: 10pt;
+  background-color: #D9D9D9;
+  margin-left: 55pt;
+  margin-right: 10pt;
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.InputInline {
+  font-size: 10pt;
+  background-color: #D9D9D9;
+  margin-left: 55pt;
+  margin-right: 10pt;
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Output:Printout*/
+.Output {
+  font-size: 10pt;
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 10pt;
+  padding: 8pt;
+}
+.OutputInline {
+  font-size: 10pt;
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 10pt;
+  padding: 8pt;
+}
+/* InputOnly:Printout*/
+.InputOnly {
+  font-size: 10pt;
+  margin-left: 55pt;
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+  padding: 8pt;
+}
+.InputOnlyInline {
+  font-size: 10pt;
+  margin-left: 55pt;
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+  padding: 8pt;
+}
+/* Message:Printout*/
+.Message {
+  font-size: 8pt;
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.MessageInline {
+  font-size: 8pt;
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Print:Printout*/
+.Print {
+  font-size: 10pt;
+  margin-left: 54pt;
+  margin-top: 6pt;
+  margin-bottom: 2pt;
+  padding: 8pt;
+}
+.PrintInline {
+  font-size: 10pt;
+  margin-left: 54pt;
+  margin-top: 6pt;
+  margin-bottom: 2pt;
+  padding: 8pt;
+}
+/* Graphics:Printout*/
+.Graphics {
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.GraphicsInline {
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* CellLabel:Printout*/
+.CellLabel {
+  font-size: 8pt;
+  margin-left: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+}
+/* SO10:Printout*/
+.SO10 {
+  font-size: 7pt;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8pt;
+}
+.SO10Inline {
+  font-size: 7pt;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding: 8pt;
+}
+/* Inert:Printout*/
+.Inert {
+  background-color: #FFFFFF;
+  padding: 8pt;
+}
+.InertInline {
+  background-color: #FFFFFF;
+  padding: 8pt;
+}
+/* Author:Printout*/
+.Author {
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 5pt;
+  margin-bottom: 45pt;
+  padding: 8pt;
+}
+.AuthorInline {
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 5pt;
+  margin-bottom: 45pt;
+  padding: 8pt;
+}
+/* Abstract:Printout*/
+.Abstract {
+  font-size: 10pt;
+  line-height: 1.2;
+  padding: 8pt;
+}
+.AbstractInline {
+  font-size: 10pt;
+  line-height: 1.2;
+  padding: 8pt;
+}
+/* Caption:Printout*/
+.Caption {
+  font-size: 8pt;
+  line-height: 1.25;
+  margin-left: 55pt;
+  margin-right: 55pt;
+  margin-top: 4pt;
+  margin-bottom: 5pt;
+  padding: 8pt;
+}
+.CaptionInline {
+  font-size: 8pt;
+  line-height: 1.25;
+  margin-left: 55pt;
+  margin-right: 55pt;
+  margin-top: 4pt;
+  margin-bottom: 5pt;
+  padding: 8pt;
+}
+/* Reference:Printout*/
+.Reference {
+  font-size: 9pt;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.ReferenceInline {
+  font-size: 9pt;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* PictureGroup:Printout*/
+.PictureGroup {
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.PictureGroupInline {
+  margin-left: 55pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* Hyperlink:Printout*/
+.Hyperlink {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.HyperlinkInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+/* MainBookLink:Printout*/
+.MainBookLink {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.MainBookLinkInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+/* AddOnsLink:Printout*/
+.AddOnsLink {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.AddOnsLinkInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+/* RefGuideLink:Printout*/
+.RefGuideLink {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.RefGuideLinkInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+/* GettingStartedLink:Printout*/
+.GettingStartedLink {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.GettingStartedLinkInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+/* DemosLink:Printout*/
+.DemosLink {
+  color: #000000;
+  padding: 8pt;
+}
+.DemosLinkInline {
+  color: #000000;
+  padding: 8pt;
+}
+/* TourLink:Printout*/
+.TourLink {
+  color: #000000;
+  padding: 8pt;
+}
+.TourLinkInline {
+  color: #000000;
+  padding: 8pt;
+}
+/* OtherInformationLink:Printout*/
+.OtherInformationLink {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.OtherInformationLinkInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+/* MasterIndexLink:Printout*/
+.MasterIndexLink {
+  color: #000000;
+  padding: 8pt;
+}
+.MasterIndexLinkInline {
+  color: #000000;
+  padding: 8pt;
+}
+/* DisplayFormula:Printout*/
+.DisplayFormula {
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.DisplayFormulaInline {
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* ChemicalFormula:Printout*/
+.ChemicalFormula {
+  font-size: 10pt;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.ChemicalFormulaInline {
+  font-size: 10pt;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* Program:Printout*/
+.Program {
+  font-size: 10pt;
+  line-height: 1.31579;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.ProgramInline {
+  font-size: 10pt;
+  line-height: 1.31579;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* NumberedEquation:Printout*/
+.NumberedEquation {
+  font-size: 8pt;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.NumberedEquationInline {
+  font-size: 8pt;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* NumberedFigure:Printout*/
+.NumberedFigure {
+  font-size: 8pt;
+  margin-left: 18pt;
+  margin-right: 80pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.NumberedFigureInline {
+  font-size: 8pt;
+  margin-left: 18pt;
+  margin-right: 80pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* NumberedTable:Printout*/
+.NumberedTable {
+  font-size: 8pt;
+  margin-left: 18pt;
+  margin-right: 80pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.NumberedTableInline {
+  font-size: 8pt;
+  margin-left: 18pt;
+  margin-right: 80pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* SlideShowNavigationBar:Printout*/
+.SlideShowNavigationBar {
+  font-size: 10pt;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+.SlideShowNavigationBarInline {
+  font-size: 10pt;
+  line-height: 1.3;
+  margin-left: 18pt;
+  margin-right: 4pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding: 8pt;
+}
+/* SlideShowSection:Printout*/
+.SlideShowSection {
+  font-size: 14pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+.SlideShowSectionInline {
+  font-size: 14pt;
+  margin-left: 18pt;
+  margin-right: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 0pt;
+  padding: 8pt;
+}
+/* SlideHyperlink:Printout*/
+.SlideHyperlink {
+  font-size: 10pt;
+  text-decoration: none;
+  color: #000000;
+  padding: 8pt;
+}
+.SlideHyperlinkInline {
+  font-size: 10pt;
+  text-decoration: none;
+  color: #000000;
+  padding: 8pt;
+}
+/* PreviousNext:Printout*/
+.PreviousNext {
+  font-size: 10pt;
+  margin-left: 2pt;
+  margin-right: 2pt;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  padding: 8pt;
+}
+.PreviousNextInline {
+  font-size: 10pt;
+  margin-left: 2pt;
+  margin-right: 2pt;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  padding: 8pt;
+}
+/* SlidePreviousNextLink:Printout*/
+.SlidePreviousNextLink {
+  padding: 8pt;
+}
+.SlidePreviousNextLinkInline {
+  padding: 8pt;
+}
+/* SlideTOCLink:Printout*/
+.SlideTOCLink {
+  text-decoration: none;
+  color: #000000;
+  padding: 8pt;
+}
+.SlideTOCLinkInline {
+  text-decoration: none;
+  color: #000000;
+  padding: 8pt;
+}
+/* SlideTOC:Printout*/
+.SlideTOC {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+.SlideTOCInline {
+  font-size: 10pt;
+  color: #000000;
+  padding: 8pt;
+}
+}
+
+.script {font-family: Mathematica5, cursive}
+.gothic {font-family: Mathematica6, Century Gothic}
+.doublestruck {font-family: Mathematica7}

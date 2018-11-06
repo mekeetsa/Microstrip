@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Text">
+ 
+</p>
+
+
+
+<p class="Title">
+ Microstrip Impedance Calculation
+</p>
+
+
+
+<p class="Text">
+ <span style='font-style: italic;font-weight: bold;'>by Mikica B Kocic</span>
+</p>
+
+
+
+<p class="Text">
+ Microstrip is one topology used to provide trace-controlled impedance on a PCB for digital circuits. Microstrip lines are exposed to both air and a dielectric referenced to a planar structure. Purpose of this notebook is to be used to calulate impedance and differential impedance of the microstrip topology. Sample calculations are provided for 90 and 100 &Omega; differential impedance in standard 4-layer PCB stackup.
+</p>
+
+
+
+<p class="Section 1">
+ References
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[1] </span>Sophocles, J. Orfanidis, Electromanetic Waves and Antennas; Chapter 9: Transmission Lines<br /><span><a href="http://www.ece.rutgers.edu/~orfanidi/ewa"><span class="HyperlinkInline">http://www.ece.rutgers.edu/~orfanidi/ewa</span></a></span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[2</span><span style='font-weight: bold;'>] </span>Width and Effective Dielectric Constant Equations for Design of Microstrip Transmission Lines, Rogers Corporation<br /><span><a href="http://www.rogerscorporation.com/acm"><span class="HyperlinkInline">http://www.rogerscorporation.com/acm</span></a></span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[3] </span>E. Hammerstad and O. Jensen, &quot;Accurate Models for Microstrip Computer-Aided Design&quot;, 1980 IEEE MTT-S International Symposioum Digest, (May 1980) Washington D.C., IEEE catalog #80CH1545-3MTT, pp 407-409
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[4] </span>Microstrip Analysis/Synthesis Calculator<br /><span><a href="http://mcalc.sourceforge.net"><span class="HyperlinkInline">http://mcalc.sourceforge.net</span></a></span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[5] </span>AWR Transmission Line Calculator<br /><span><a href="http://www.appwave.com/products/txline.html"><span class="HyperlinkInline">http://www.appwave.com/products/txline.html</span></a></span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[6] </span>PCB Trace Impedance Calculator<br /><span><a href="http://www.emclab.umr.edu/pcbtlc"><span class="HyperlinkInline">http://www.emclab.umr.edu/pcbtlc</span></a></span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[7] </span>H. W. Johnson and M. Graham, High-Speed Digital Design: A Handbook of Black Magic; 1st ed. 1993, Prentice Hall, ISBN 0133957241
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[8] </span>H. W. Johnson, High Speed Signal Propagation: Advanced Black Magic; 1st ed. 2003, Prentice Hall, ISBN 013084408X
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[9] </span>M. I. Montrose, Printed Circuit Board Design Techniques for EMC Compliance; 2nd ed. 2000, Wiley-IEEE, ISBN 0780353765 
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'>[10] </span>IPC Standard IPC-D-317A
+</p>
+
+
+
+<p class="Section 1">
+ Parameter Definitions
+</p>
+
+
+
+<p class="Text">
+ 
+</p>
+
+
+
+<p class="Subsection">
+ Geometric Parameters
+</p>
+
+
+
+<p class="Text">
+ <span style='font-family: Courier New;font-weight: bold;'>w</span><span style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;</span>: Wdith of the trace<br /><span style='font-family: Courier New;font-weight: bold;'>t</span><span style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;</span>: Thickness of the trace<br /><span style='font-family: Courier New;font-weight: bold;'>h</span><span style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;</span>: Distance between signal trace and reference plane<br /><span style='font-family: Courier New;font-weight: bold;'>s</span><span style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;</span>: Trace edge-to-edge spacing<br /><span style='font-family: Courier New;font-weight: bold;'>d</span><span style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;</span>: Trace center-to-center spacing (<span style='font-weight: bold;'><span>d=s+w</span></span>)<br /><br /><span style='font-weight: bold;'>Note</span>: Consistent dimensions for <span style='font-family: Courier New;font-weight: bold;'>w</span>, <span style='font-family: Courier New;font-weight: bold;'>t</span>, <span style='font-family: Courier New;font-weight: bold;'>h</span>,<span style='font-weight: bold;'> </span><span style='font-family: Courier New;font-weight: bold;'>d</span> or <span style='font-family: Courier New;font-weight: bold;'>s</span> should be used.
+</p>
+
+
+
+<p class="Subsection">
+ Electric Parameters
+</p>
+
+
+
+<p class="Text">
+ <span style='font-weight: bold;'><span><img src="HTMLFiles/index_1.png" alt="index_1.png" width="13" height="16" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;: Dielectrict constant of the planar material<br /><span style='font-weight: bold;'><span><img src="HTMLFiles/index_2.png" alt="index_2.png" width="13" height="16" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;: Characteristic impedance [&Omega;]<br /><span style='font-weight: bold;'><span><img src="HTMLFiles/index_3.png" alt="index_3.png" width="28" height="16" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;: Differential impedance between trace [&Omega;]<br /><span style='font-weight: bold;'><span><img src="HTMLFiles/index_4.png" alt="index_4.png" width="13" height="16" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;: Intrinsic capacitance of the trace [nF/m]<br /><span style='font-weight: bold;'><span><img src="HTMLFiles/index_5.png" alt="index_5.png" width="13" height="16" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;: Intrinsic inductance of the trace [nH/m]<br /><span style='font-weight: bold;'><span><img src="HTMLFiles/index_6.png" alt="index_6.png" width="20" height="16" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;: Propagation delay [ns/m]
+</p>
+
+
+
+<p class="Section 1">
+ Formulae
+</p>
+
+
+
+<p class="Text">
+ Formulae included in this notebook originate from <span style='font-weight: bold;'>[1]</span> E. Hammerstad and O. Jensen, &quot;Accurate Models for Microstrip Computer-Aided Design&quot;. Formulae are further elaborated in <span style='font-weight: bold;'>[2]</span> and <span style='font-weight: bold;'>[3]</span>. The accuracy is better than 0.2% for <span><span>0.1&le; w/h&le;100</span></span> and <span><span><img src="HTMLFiles/index_7.png" alt="index_7.png" width="49" height="15" style="vertical-align:middle" /></span></span>.Practical values of the width-to-height ratio are in the range <span><span>0.1&le; w/h&le;10</span></span> and practical values of charactersitic impedances are between 10 and 200 &Omega;.
+</p>
+
+
+
+<p class="Subsubsection">
+ Zero-frequency effective relative permittivity as a function of microstrip trace geometry
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_8.png" alt="index_8.png" width="697" height="47" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Effective trace width as a function of other parameters
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_9.png" alt="index_9.png" width="553" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Zero-frequency characteristic impedance as a function of trace geometry
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_10.png" alt="index_10.png" width="520" height="41" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_11.png" alt="index_11.png" width="332" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Propagation delay as a function of trace geometry
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_12.png" alt="index_12.png" width="379" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Intrinsic capaciotance and inductance as a function of trace geometry
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_13.gif" alt="index_13.gif" width="326" height="55" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Differential characteristic impedance between traces as a function of trace geometry
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_14.png" alt="index_14.png" width="402" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Section 1">
+ Test Calculations
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_15.gif" alt="index_15.gif" width="491" height="242" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/index_16.png" alt="index_16.png" width="174" height="93" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/index_17.png" alt="index_17.png" width="341" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Section 1">
+ Sample Layer Stackup
+</p>
+
+
+
+<p class='Text' style='font-family: Arial;font-weight: bold;'>
+ 4001: 1.6mm Standard 4-layer PCB Stackup
+</p>
+
+
+
+<p class="Text">
+ FR-4 core with 2116 prepreg. Dielectric constant <span><span><img src="HTMLFiles/index_18.png" alt="index_18.png" width="49" height="15" style="vertical-align:middle" /></span></span>. 
+</p>
+
+
+
+<p class="Text">
+ 4001: 1.6mm Standard 4-layer PCB Stackup
+</p>
+
+
+
+<p class="Text">
+ Manufacturing Constraints:<br />- Minimum trace width (<span style='font-weight: bold;'>w</span>) is 6 mils.<br />- Minimum space between traces (<span style='font-weight: bold;'>s</span>) is 6 mils.<br />- Minimum drill hole size is 20 mils (0.5mm).
+</p>
+
+
+
+<p class='Text' style='font-size: 9px;font-family: Lucida Console;'>
+ Top Layer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.037 mm&nbsp;&nbsp;&nbsp;&nbsp;1.457 mils<br />Prepreg 2216:&nbsp;&nbsp;&nbsp;0.230 mm&nbsp;&nbsp;&nbsp;&nbsp;9.044 mils<br />Inner Layer:&nbsp;&nbsp;&nbsp;&nbsp;0.035 mm&nbsp;&nbsp;&nbsp;&nbsp;1.388 mils<br />Core FR-4:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.060 mm&nbsp;&nbsp;&nbsp;41.732 mils<br />Inner Layer:&nbsp;&nbsp;&nbsp;&nbsp;0.035 mm&nbsp;&nbsp;&nbsp;&nbsp;1.388 mils<br />Prepreg 2216:&nbsp;&nbsp;&nbsp;0.230 mm&nbsp;&nbsp;&nbsp;&nbsp;9.044 mils<br />Bottom Layer:&nbsp;&nbsp;&nbsp;0.037 mm&nbsp;&nbsp;&nbsp;&nbsp;1.457 mils<br />--------------------------------------<br />Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.664 mm&nbsp;&nbsp;&nbsp;65.521 mils
+</p>
+
+
+
+<p class="Subsection">
+ Default Parameters
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_19.gif" alt="index_19.gif" width="56" height="117" style="vertical-align:middle" />
+</p>
+
+<p class="Section 1">
+ Utility Functions
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_20.png" alt="index_20.png" width="483" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_21.png" alt="index_21.png" width="242" height="18" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_22.gif" alt="index_22.gif" width="653" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_23.gif" alt="index_23.gif" width="838" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Section 1">
+ <span><span><img src="HTMLFiles/index_24.png" alt="index_24.png" width="359" height="21" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_25.gif" alt="index_25.gif" width="1541" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/index_26.gif" alt="index_26.gif" width="443" height="274" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_27.png" alt="index_27.png" width="76" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_28.png" alt="index_28.png" width="845" height="77" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_29.png" alt="index_29.png" width="212" height="583" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <span><span><img src="HTMLFiles/index_30.png" alt="index_30.png" width="229" height="15" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Section 1">
+ <span><span><img src="HTMLFiles/index_31.png" alt="index_31.png" width="348" height="21" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_32.gif" alt="index_32.gif" width="1534" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/index_33.gif" alt="index_33.gif" width="443" height="274" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_34.png" alt="index_34.png" width="76" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_35.png" alt="index_35.png" width="845" height="77" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_36.png" alt="index_36.png" width="195" height="583" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <span><span><img src="HTMLFiles/index_37.png" alt="index_37.png" width="222" height="15" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Section 1">
+ <span><span><img src="HTMLFiles/index_38.png" alt="index_38.png" width="451" height="21" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_39.gif" alt="index_39.gif" width="1524" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/index_40.gif" alt="index_40.gif" width="443" height="274" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_41.png" alt="index_41.png" width="76" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_42.png" alt="index_42.png" width="808" height="177" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_43.png" alt="index_43.png" width="399" height="439" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <span><span><img src="HTMLFiles/index_44.png" alt="index_44.png" width="287" height="15" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Section 1">
+ <span><span><img src="HTMLFiles/index_45.png" alt="index_45.png" width="462" height="21" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_46.gif" alt="index_46.gif" width="1531" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/index_47.gif" alt="index_47.gif" width="441" height="273" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_48.png" alt="index_48.png" width="76" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_49.png" alt="index_49.png" width="808" height="177" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_50.png" alt="index_50.png" width="399" height="439" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <span><span><img src="HTMLFiles/index_51.png" alt="index_51.png" width="294" height="15" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
